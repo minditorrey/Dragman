@@ -4,76 +4,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
   <title>Dragman</title>
 </head>
 <body>
-  <div id="introduction">
-    <h1>
+
+    <div id="introduction">
+      <h1 class="animated swing">
 Dragman
 </h1>
-    <p>
-      A twist on the classic game of Hangman. Use the alphabet below to guess the sickening word/phrase. Guess the word/phrase before the queen beats her face. Select Help me, gawwwwd! to get a clue.
-    </p>
-  </div>
-  <!--introduction-->
+      <p>
+        A twist on the classic game of Hangman. Use the alphabet below to guess the sickening word/phrase. Guess the word/phrase. You get four chances before this fishy queen beats her face.
+      </p>
+    </div>
+    <!--introduction-->
 
-  <div id="play">
-    <button class="btn play">Play</button>
+    <div id="play">
+      <button class="btn play">Play</button>
 
-  </div>
-  <!--play-->
+    </div>
+    <!--play-->
+    <div class="well well-sm">
+      <div id="words">
+        <h2>The category is drag</h2>
+        <div class="btn-group btn-group-sm pagination-centered">
+          <button class="btn btn-default">a</button>
+          <button class="btn btn-default">b</button>
+          <button class="btn btn-default">c</button>
+          <button class="btn btn-default">d</button>
+          <button class="btn btn-default">e</button>
+          <button class="btn btn-default">f</button>
+          <button id="btn-g" class="btn btn-default">g</button>
+          <button id="btn-h" class="btn btn-default">h</button>
+          <button id="btn-i" class="btn btn-default">i</button>
+          <button id="btn-j" class="btn btn-default">j</button>
+          <button id="btn-k" class="btn btn-default">k</button>
+          <button id="btn-l" class="btn btn-default">l</button>
+          <button id="btn-m" class="btn btn-default">m</button>
 
-  <div id="words">
-    <h2>The category is drag</h2>
+          <button id="btn-n" class="btn btn-default">n</button>
+          <button id="btn-o" class="btn btn-default">o</button>
+          <button id="btn-p" class="btn btn-default">p</button>
+          <button id="btn-q" class="btn btn-default">q</button>
+          <button id="btn-r" class="btn btn-default">r</button>
+          <button id="btn-s" class="btn btn-default">s</button>
+          <button id="btn-t" class="btn btn-default">t</button>
+          <button id="btn-u" class="btn btn-default">u</button>
+          <button id="btn-v" class="btn btn-default">v</button>
+          <button id="btn-w" class="btn btn-default">w</button>
+          <button id="btn-x" class="btn btn-default">x</button>
+          <button id="btn-y" class="btn btn-default">y</button>
+          <button id="btn-z" class="btn btn-default">z</button>
+        </div>
+      </div>
+      <div id="guesses">
+        <p id="guess-it">
+          Your word is:
+        </p>
+      </div>
 
-    <div class="btn-group btn-group-sm pagination-centered">
-      <button class="btn btn-default">a</button>
-      <button class="btn btn-default">b</button>
-      <button class="btn btn-default">c</button>
-      <button class="btn btn-default">d</button>
-      <button class="btn btn-default">e</button>
-      <button class="btn btn-default">f</button>
-      <button id="btn-g" class="btn btn-default">g</button>
-      <button id="btn-h" class="btn btn-default">h</button>
-      <button id="btn-i" class="btn btn-default">i</button>
-      <button id="btn-j" class="btn btn-default">j</button>
-      <button id="btn-k" class="btn btn-default">k</button>
-      <button id="btn-l" class="btn btn-default">l</button>
-      <button id="btn-m" class="btn btn-default">m</button>
-      <br>
-      <button id="btn-n" class="btn btn-default">n</button>
-      <button id="btn-o" class="btn btn-default">o</button>
-      <button id="btn-p" class="btn btn-default">p</button>
-      <button id="btn-q" class="btn btn-default">q</button>
-      <button id="btn-r" class="btn btn-default">r</button>
-      <button id="btn-s" class="btn btn-default">s</button>
-      <button id="btn-t" class="btn btn-default">t</button>
-      <button id="btn-u" class="btn btn-default">u</button>
-      <button id="btn-v" class="btn btn-default">v</button>
-      <button id="btn-w" class="btn btn-default">w</button>
-      <button id="btn-x" class="btn btn-default">x</button>
-      <button id="btn-y" class="btn btn-default">y</button>
-      <button id="btn-z" class="btn btn-default">z</button>
+      <div id="dragman" class="centered">
+        <img id="viv-1" src="https://i.imgur.com/Hk2osTx.jpg?1" title="source: imgur.com" />
+      </div>
+      <div>
+        <p class='used'>
+          Letters used:
+        </p>
+        <p class="wrong">
+          Wrong guesses:
+        </p>
+        <button class="btn centered again">
+          Play Again
+        </button>
+      </div>
     </div>
   </div>
-
-  <div id="dragman" class="centered">
-    <img id="viv-1" src="http://i.imgur.com/Hk2osTx.jpg?1" title="source: imgur.com" />
-
-  </div>
-  <div>
-    <p class='used'>
-      Letters used:
-    </p>
-
-    <button class="btn centered help">
-      Help me, gawwwwd!
-    </button>
-    <button class="btn centered again">
-      Play Again
-    </button>
+  <!--well-->
   </div>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
