@@ -7,7 +7,7 @@ $(document).ready(function() {
   var underscores = "";
   $('.play').click(function() {
     $('<img class="queens img-responsive" src="http://static.pinkisthenewblog.com/uploads/2014/01/14/011414_rupaul6trailerfeat-600x450.jpg" width="250" height="170">').load(function() {
-      $(this).width(1000).height(300).appendTo('#play');
+      $(this).width(1100).height(300).appendTo('#play');
     });
     $('#play').html('<p class="start">Gentlemen, start your engines. May the best woman...WIN!</p>');
 
