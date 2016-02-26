@@ -5,7 +5,10 @@ body {
   font-size: 18px;
   font-family: sans-serif;
 }
-
+.twist {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .play {
   margin-top: 5%;
 }
@@ -96,6 +99,7 @@ h3 {
 .queens {
   margin-top: 5%;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .help {
