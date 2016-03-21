@@ -7,7 +7,7 @@ $(document).ready(function() {
   var underscores = "";
   $('.play').click(function() {
     $('<img class="queens img-responsive" src="http://vignette1.wikia.nocookie.net/logosrupaulsdragrace/images/b/ba/Rupaul_blackpink_final.jpg/revision/latest?cb=20110731183922" width="250" height="170">').load(function() {
-      $(this).appendTo('#play');
+      $(this).addClass("centered").appendTo('#play');
     });
     $('#play').html('<p class="start">Gentlemen, start your engines. May the best woman...WIN!</p>');
 
